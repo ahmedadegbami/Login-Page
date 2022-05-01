@@ -57,23 +57,23 @@ button.onclick = () => {
           username.value != staff[i].username ||
           password.value != staff[i].password
         ) {
-          infoMismatched.textContent = "Username or Password not valid";
+          infoMismatched.textContent = "Username/Password is incorrect";
         }
       }
     }
   } else {
-    if (username.value == "") {
-      username.nextElementSibling.textContent = "Enter Username";
-      setTimeout(() => {
-        username.nextElementSibling.textContent = "";
-      }, 3000);
-    }
-    if (password.value == "") {
-      password.nextElementSibling.textContent = "Enter password";
-      setTimeout(() => {
-        password.nextElementSibling.textContent = "";
-      }, 3000);
-    }
+    // if (username.value == "") {
+    //   username.nextElementSibling.textContent = "Enter Username";
+    //   setTimeout(() => {
+    //     username.nextElementSibling.textContent = "";
+    //   }, 3000);
+    // }
+    // if (password.value == "") {
+    //   password.nextElementSibling.textContent = "Enter password";
+    //   setTimeout(() => {
+    //     password.nextElementSibling.textContent = "";
+    //   }, 3000);
+    // }
   }
 };
 

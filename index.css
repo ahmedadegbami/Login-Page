@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap");
+
 body {
   --colour-green: #00ff00;
   --colour-black: #000000;
@@ -5,16 +7,93 @@ body {
   --colour-red: #ff0000;
   --colour-blue: #0000ff;
   --colour-yellow: #ffff00;
-  --border-radius: 4px;
+  --border-radius: 15px;
 
   height: 100vh;
-  background-color: url("./background.jpeg");
+  background: url("./background.jpeg");
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
   font-size: 18px;
+  color: var(--colour-white);
 }
 
 .container {
+  width: 350px;
+  max-width: 350px;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: var(--colour-green);
+  box-shadow: 0px 0px 0px 50px rgba(1, 39, 8, 0.2);
+  border: 2px solid green;
+  border-radius: var(--border-radius);
+}
+
+.container,
+button,
+input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 2px;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 30px 0 30px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+span {
+  color: var(--colour-red);
+}
+
+.button,
+.form-content {
+  display: flex;
+  justify-content: center;
+  margin: 5px auto 5px auto;
+  border-radius: var(--border-radius);
+  color: var(--colour-white);
+  cursor: pointer;
+}
+
+input,
+button {
+  padding: 10px;
+  border: 1px solid var(--colour-white);
+  border-radius: var(--border-radius);
+  background-color: var(--colour-white);
+  color: var(--colour-black);
+}
+
+button:hover {
+  background-color: var(--colour-red);
+  color: var(--colour-white);
+}
+
+button:active {
+  transform: scale(0.5);
+}
+
+.forget {
+  display: flex;
+  justify-content: center;
+  margin: 5px auto 5px auto;
+  color: var(--colour-blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.forget:hover {
+  text-decoration: underline;
 }

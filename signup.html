@@ -9,39 +9,56 @@
   </head>
   <body>
     <form action="">
-      <div>
-        <label for="username">Username:</label>
-        <input type="text" name="username" placeholder="Enter username" />
-        <span id="usererror"></span>
+      <div class="container">
+        <h1 class="login">Sign Up</h1>
+        <div>
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter username"
+            size="30"
+          />
+          <span id="usererror"></span>
+        </div>
+        <div>
+          <label for="username">Email:</label>
+          <input
+            type="email"
+            name="username"
+            placeholder="Enter email address"
+            size="30"
+          />
+          <span id="usererror"></span>
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter password"
+            size="30"
+          />
+          <br />
+          <label for="password">Repeat Password:</label>
+          <input
+            type="password"
+            name="repeat-password"
+            id="password"
+            placeholder="Repeat password"
+            size="30"
+          />
+          <span id="passerror"></span>
+        </div>
+        <span></span><br />
+        <div class="button">
+          <button type="submit">Register</button>
+          <button type="button" onclick="window.location.href = 'index.html';">
+            Login
+          </button>
+        </div>
       </div>
-      <div>
-        <label for="username">Email:</label>
-        <input type="email" name="username" placeholder="Enter email address" />
-        <span id="usererror"></span>
-      </div>
-      <div>
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Enter password"
-        />
-        <br />
-        <label for="password">Repeat Password:</label>
-        <input
-          type="password"
-          name="repeat-password"
-          id="password"
-          placeholder="Enter password"
-        />
-        <span id="passerror"></span>
-      </div>
-      <span></span><br />
-      <button type="submit">Register</button>
-      <button type="button" onclick="window.location.href = 'index.html';">
-        Login
-      </button>
     </form>
 
     <script src="index.js"></script>

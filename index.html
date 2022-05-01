@@ -8,13 +8,31 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="home.html">
-      <label for="username">Username:</label>
-      <input type="text" name="username" placeholder="Enter username" />
-      <label for="username">Password:</label>
-      <input type="password" name="password" placeholder="Enter password" />
-      <button type="submit">Login</button>
-    </form>
+    <div class="container">
+      <form action="home.html">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" name="username" placeholder="Enter username" />
+          <span id="usererror"></span>
+        </div>
+
+        <div>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter password"
+          />
+          <span id="passerror"></span>
+        </div>
+        <span></span><br />
+        <button type="submit">Login</button>
+        <button type="button" onclick="window.location.href = '/signup.html';">
+          Sign Up
+        </button>
+      </form>
+    </div>
 
     <script src="index.js"></script>
   </body>

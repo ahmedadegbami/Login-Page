@@ -1,0 +1,20 @@
+body {
+  --colour-green: #00ff00;
+  --colour-black: #000000;
+  --colour-white: #ffffff;
+  --colour-red: #ff0000;
+  --colour-blue: #0000ff;
+  --colour-yellow: #ffff00;
+  --border-radius: 4px;
+
+  height: 100vh;
+  background-color: url("./background.jpeg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 18px;
+}
+
+.container {
+}
